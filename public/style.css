@@ -1,3 +1,117 @@
 body {
-    background-color: aquamarine;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2e9;
+  color: #1a1a1a;
+}
+
+.cabecalho {
+  background: #1f3d2b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.nome-artista {
+  margin: 0 0 10px 0;
+}
+
+.formulario input {
+  padding: 8px;
+  margin: 5px;
+}
+
+.formulario button {
+  padding: 8px 12px;
+  background: #4caf7a;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+}
+
+.menu-lateral {
+  width: 200px;
+  background: #2e5d46;
+  padding: 20px;
+}
+
+.lista-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-menu li {
+  margin: 15px 0;
+}
+
+.lista-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.principal {
+  flex: 1;
+  padding: 20px;
+}
+
+.secao {
+  background: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.artigo {
+  background: #fafafa;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.bio .artigo {
+  display: flex;
+  gap: 20px;
+}
+
+.artigo img {
+  width: 150px;
+}
+
+.lista-albuns {
+  display: flex;
+  gap: 20px;
+}
+
+.discografia .artigo {
+  text-align: center;
+}
+
+.rodape {
+  background: #1f3d2b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.redes {
+  margin: 15px 0;
+}
+
+.icone {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.icone svg {
+  width: 28px;
+  height: 28px;
+  fill: #4caf7a;
+  transition: 0.3s;
+}
+
+.icone:hover svg {
+  fill: #a5d6a7;
 }
