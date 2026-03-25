@@ -29,11 +29,12 @@ body {
 }
 
 .container {
-  display: flex;
+  overflow: hidden; 
 }
 
 .menu-lateral {
   width: 200px;
+  float: left;
   background: #2e5d46;
   padding: 20px;
 }
@@ -53,7 +54,7 @@ body {
 }
 
 .principal {
-  flex: 1;
+  margin-left: 240px; 
   padding: 20px;
 }
 
@@ -61,7 +62,6 @@ body {
   background: white;
   margin-bottom: 20px;
   padding: 20px;
-  position: relative;
 }
 
 .artigo {
@@ -71,17 +71,28 @@ body {
 }
 
 .bio .artigo {
-  display: flex;
-  gap: 20px;
+  overflow: hidden;
 }
 
-.artigo img {
+.bio .artigo img {
+  float: left;
+  margin-right: 20px;
   width: 150px;
 }
 
 .lista-albuns {
-  display: flex;
-  gap: 20px;
+  text-align: center;
+}
+
+.lista-albuns .artigo {
+  display: inline-block;
+  width: 180px;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.artigo img {
+  width: 150px;
 }
 
 .discografia .artigo {
@@ -114,4 +125,11 @@ body {
 
 .icone:hover svg {
   fill: #a5d6a7;
+}
+
+.container::after,
+.artigo::after {
+  content: "";
+  display: block;
+  clear: both;
 }
